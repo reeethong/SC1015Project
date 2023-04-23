@@ -4,10 +4,10 @@
 
 This mini-project for SC1015 (Introduction to Data Science and Artificial Intelligence) focusses on the Wine Quality dataset (https://www.kaggle.com/datasets/rajyellow46/wine-quality). Our source code can be found in the following hyperlinks.
 
-Dataset Preview & EDA
-Data Cleaning
-Decision Tree
-LightGBM Model
+1. [Dataset Preview & EDA](https://github.com/reeethong/SC1015Project/blob/main/%5BFINAL%20SUBMISSION%5D%20SC1015%20Wine%20Mini%20Project%20.ipynb)
+2. [Data Cleaning]
+3. [Decision Tree]
+4. [LightGBM Model]
 
 1. [Data Extraction](https://github.com/nicklimmm/movie-analysis/blob/main/data-extraction.ipynb)
 2. [Data Visualization](https://github.com/nicklimmm/movie-analysis/blob/main/data-visualization.ipynb)
@@ -16,9 +16,9 @@ LightGBM Model
 5. [Neural Network](https://github.com/nicklimmm/movie-analysis/blob/main/neural-network.ipynb)
 
 # Contributors 
-Reyan - Dataset Preview, Exploratory Data Analysis 
-Ryan - Data Cleaning (Isolation forest), Grid Search
-Yuhan -  Decision Tree Model, Light GBM Model, Conclusions
+- Reyan - Dataset Preview, Exploratory Data Analysis 
+- Ryan - Data Cleaning (Isolation forest), Grid Search
+- Yuhan -  Decision Tree Model, Light GBM Model, Conclusions
 
 # Problem Definition
 ## As university students, we are new to the wine scene and would like to enjoy wine as much as our parents. Even within red and white wine, there are so many different wine products available on the market. Hence, we would like to find out which factors are important in predicting wine quality so that we can make more informed decisions when purchasing wine and choose wines that are more likely to match our preferences. 

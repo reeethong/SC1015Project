@@ -4,10 +4,10 @@
 
 This mini-project for SC1015 (Introduction to Data Science and Artificial Intelligence) focusses on the [Wine Quality dataset] (https://www.kaggle.com/datasets/rajyellow46/wine-quality). Our source code can be found in the following hyperlinks.
 
-1. [Dataset Preview & EDA]
-2. [Data Cleaning]
-3. [Decision Tree]
-4. [LightGBM Model]
+1. Dataset Preview & EDA
+2. Data Cleaning
+3. Decision Tree
+4. LightGBM Model
 
 ## Contributors 
 - Reyan - Dataset Preview, Exploratory Data Analysis 

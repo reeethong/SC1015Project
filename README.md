@@ -37,11 +37,11 @@ We proceed by training the LightGBM model for each iteration and using the 'feat
 Finally, we evaluate our model performance using the root mean squared error (RMSE) metric. Additionally, we plot the feature importance of each variable to gain further insights into the behavior of our model.
 
 ## Findings and insights gained
-###White wine:
+### White wine:
 Decision tree model determined that alcohol, volatile acidity, free sulfur dioxide, and chlorides as the most important features for predicting white wine quality. 
 Light GBM model indicated that volatile acidity, free sulfur dioxide, and chlorides got high feature importance scores.
 
-###Red wine:
+### Red wine:
 Alcohol, sulphates, volatile acidity, and total sulfur dioxide were important features according to the decision tree model. 
 Light GBM model identified a different set of top features, namely, total sulfur dioxide, density, residual sugar, and volatile acidity. 
 Only two factors – total sulfur dioxide and volatile acidity overlapped between the two models. Alcohol and sulphates are not even in the top8 most important features in Light GBM model. 

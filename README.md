@@ -12,7 +12,7 @@ This mini-project for SC1015 (Introduction to Data Science and Artificial Intell
 ## Contributors 
 - Reyan - Dataset Preview, Exploratory Data Analysis 
 - Ryan - Data Cleaning (Isolation forest), Grid Search
-- Yuhan -  Decision Tree Model, Light GBM Model, Conclusions
+- Yuhan -  Decision Tree Model, Light GBM Model, Findings and Conclusions
 
 ## Problem Definition
 As avid wine lovers, we like to sample wines that we have not tried before so that we can discover new wines that match our taste but in doing so, we have sampled so many disappointing wines. Hence, we would like to identify the factors that contribute to wine quality so that winemakers can produce wines that are more likely to satisfy consumer preferences. Thus as consumers, we will be more likely to discover wines that we enjoy and are willing to purchase again in the future.
@@ -35,30 +35,30 @@ To improve our decision tree, we applied grid search to our model. Grid search f
 
 ### LightGBM Model
 
-In this project, we employ the LightGBM model, which is a gradient boosting framework utilizing a tree-based learning algorithm. We utilize the Stratified K-Fold cross-validator, employing 5 folds to divide the training data into multiple subsets. Each iteration of our process involves training the model on 4 folds and evaluating its performance on the remaining fold. This entire process is repeated 5 times, with each fold serving as the validation set once.
+In this project, we employed the LightGBM model, which is a gradient boosting framework utilizing a tree-based learning algorithm. We utilized the Stratified K-Fold cross-validator, employing 5 folds to divide the training data into multiple subsets. Each iteration of our process involved training the model on 4 folds and evaluating its performance on the remaining fold. This entire process was repeated 5 times, with each fold serving as the validation set once.
 We proceed by training the LightGBM model for each iteration and using the 'feature_importance()' method to compute the importance score of each physicochemical variable. We then store the computed importance scores of each feature in a dataframe.
 Finally, we evaluate our model performance using the root mean squared error (RMSE) metric. Additionally, we plot the feature importance of each variable to gain further insights into the behavior of our model.
 
 ## Findings and insights gained
 ### White wine:
 Decision tree model determined that alcohol, volatile acidity, free sulfur dioxide, and chlorides as the most important features for predicting white wine quality. 
-Light GBM model indicated that volatile acidity, free sulfur dioxide, and chlorides got high feature importance scores.
+Light GBM model indicated that volatile acidity, free sulfur dioxide and chlorides received high feature importance scores.
 
 ### Red wine:
 Alcohol, sulphates, volatile acidity, and total sulfur dioxide were important features according to the decision tree model. 
 Light GBM model identified a different set of top features, namely, total sulfur dioxide, density, residual sugar, and volatile acidity. 
-Only two factors – total sulfur dioxide and volatile acidity overlapped between the two models. Alcohol and sulphates are not even in the top8 most important features in Light GBM model. 
+Only two factors, total sulfur dioxide and volatile acidity, overlapped between the two models. Alcohol and sulphates were not even in the top 8 most important features in Light GBM model. 
 
 This inconsistency may be due to the decision tree model being adept at capturing non-linear relationships between features, while Light GBM may not be as effective in this regard. Additionally, the decision tree model is susceptible to noise in the dataset, whereas Light GBM is more robust and better able to ignore irrelevant features.
 
 
 ## Conclusion
-- Red and White wine have very distinct differences in their distribution of physiochemical makeups and should be considered separately.
-- To improve white wine quality, the wine makers should exercise greater control over these four factors by decreasing volatile acidity, free sulfur dioxide, and chlorides.
-- The wine makers should prioritize their attention on the factors of total sulfur dioxide and volatile acidity in order to improve red wine quality. This can be achieved by simultaneously increasing volatile acidity and decreasing total sulfur dioxide levels.
+- Red and White wines have very distinct differences in their distribution of physiochemical makeups and should be analysed separately.
+- To improve white wine quality, the wine makers should exercise greater control over 3 main factors, by decreasing volatile acidity, free sulfur dioxide, and chlorides.
+- Red wine makers should focus on the factors of total sulfur dioxide and volatile acidity in order to improve wine quality. They should simultaneously decrease total sulfur dioxide levels and increase volatile acidity.
 
 ## Our learning points 
-- Identifying trends and separating data for analysis
+- Data binning and separating data for analysis
 - Anomaly detection: Isolation forest
 - Other packages such as Light GBM
 - Machine Learning Models:

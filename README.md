@@ -70,5 +70,6 @@ https://www.canva.com/design/DAFfUENcVMs/OiC64Qu3Sc1h5QHomGXG9w/edit?utm_content
 
 ## References
 - https://www.analyticsvidhya.com/blog/2021/08/complete-guide-on-how-to-use-lightgbm-in-python/
+- https://www.kaggle.com/code/mgmarques/wines-type-and-quality-classification-exercises
 - https://towardsdatascience.com/grid-search-for-model-tuning-3319b259367e
 - https://www.analyticsvidhya.com/blog/2021/07/anomaly-detection-using-isolation-forest-a-complete-guide/

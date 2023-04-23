@@ -1,10 +1,19 @@
 # Wine quality analysis Repository
+
 ## Introduction
-This mini-project for SC1015 (Introduction to Data Science and Artificial Intelligence) focusses on the Wine Quality dataset [include hyperlink to Kaggle page]. Our source code can be found in the following hyperlinks.
+
+This mini-project for SC1015 (Introduction to Data Science and Artificial Intelligence) focusses on the Wine Quality dataset (https://www.kaggle.com/datasets/rajyellow46/wine-quality). Our source code can be found in the following hyperlinks.
+
 Dataset Preview & EDA
 Data Cleaning
 Decision Tree
 LightGBM Model
+
+1. [Data Extraction](https://github.com/nicklimmm/movie-analysis/blob/main/data-extraction.ipynb)
+2. [Data Visualization](https://github.com/nicklimmm/movie-analysis/blob/main/data-visualization.ipynb)
+3. [Data Resampling and Splitting](https://github.com/nicklimmm/movie-analysis/blob/main/data-resampling-and-splitting.ipynb)
+4. [Logistic Regression](https://github.com/nicklimmm/movie-analysis/blob/main/logistic-regression.ipynb)
+5. [Neural Network](https://github.com/nicklimmm/movie-analysis/blob/main/neural-network.ipynb)
 
 # Contributors 
 Reyan - Dataset Preview, Exploratory Data Analysis 

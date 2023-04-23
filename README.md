@@ -62,8 +62,8 @@ This inconsistency may be due to the decision tree model being adept at capturin
 - Anomaly detection: Isolation forest
 - Other packages such as Light GBM
 - Machine Learning Models:
-- Decision tree with grid search
-- Light GBM model with stratified K-Fold cross-validation
+*- Decision tree with grid search
+*- Light GBM model with stratified K-Fold cross-validation
 
 ## Presentation slides
 https://www.canva.com/design/DAFfUENcVMs/OiC64Qu3Sc1h5QHomGXG9w/edit?utm_content=DAFfUENcVMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton

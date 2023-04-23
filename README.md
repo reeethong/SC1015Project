@@ -9,9 +9,6 @@ This mini-project for SC1015 (Introduction to Data Science and Artificial Intell
 3. [Decision Tree]
 4. [LightGBM Model]
 
-1. [Data Extraction](https://github.com/nicklimmm/movie-analysis/blob/main/data-extraction.ipynb)
-
-
 ## Contributors 
 - Reyan - Dataset Preview, Exploratory Data Analysis 
 - Ryan - Data Cleaning (Isolation forest), Grid Search
@@ -21,30 +18,30 @@ This mini-project for SC1015 (Introduction to Data Science and Artificial Intell
 As university students, we are new to the wine scene and would like to enjoy wine as much as our parents. Even within red and white wine, there are so many different wine products available on the market. Hence, we would like to find out which factors are important in predicting wine quality so that we can make more informed decisions when purchasing wine and choose wines that are more likely to match our preferences. 
 
 ## Models used
-1. Isolation Forest
+###1. Isolation Forest
 
 Isolation Forest is an unsupervised machine learning algorithm that detects anomalies by partitioning data recursively using random splits.  It is easier to isolate an anomaly in a tree because it requires fewer splits, while normal points take more splits to isolate. The algorithm creates isolation trees by randomly selecting a feature and a split value for each node until a termination condition is met. Each point is then given an anomaly score based on how many splits are required to isolate it. By generating an isolation forest for both red and white wine, we are able to identify the data points more likely to be an anomaly and remove them, allowing us for more accurate analysis.
 
-2. Decision Trees
+###2. Decision Trees
 
 The decision tree algorithm selects the feature that splits the data in a way that maximizes the separation between the classes or minimizes the impurity in the target variable. Hence, by examining the decision tree structure, we can identify which features are most frequently used in the tree and at what depth they are used. The features used closer to the root node are generally more important in terms of their ability to predict the target variable. The importance of a feature can also be calculated as the total reduction of error that resulted from splitting that feature.
 
-3. Grid Search
+###3. Grid Search
 
 To improve our decision tree, we applied grid search to our model. Grid search finds the best combination of hyperparameters for our model. It creates a grid of all the possible combinations of hyperparameters and evaluates each combination using cross-validation. Finally, it would select the combination with the best performance. This technique helped us determine the best hyperparameters to use in our decision trees such as the depth of the tree, minimum samples for leaf nodes and the criterion.
 
-4. LightGBM Model
+###4. LightGBM Model
 
 In this project, we employ the LightGBM model, which is a gradient boosting framework utilizing a tree-based learning algorithm. We utilize the Stratified K-Fold cross-validator, employing 5 folds to divide the training data into multiple subsets. Each iteration of our process involves training the model on 4 folds and evaluating its performance on the remaining fold. This entire process is repeated 5 times, with each fold serving as the validation set once.
 We proceed by training the LightGBM model for each iteration and using the 'feature_importance()' method to compute the importance score of each physicochemical variable. We then store the computed importance scores of each feature in a dataframe.
 Finally, we evaluate our model performance using the root mean squared error (RMSE) metric. Additionally, we plot the feature importance of each variable to gain further insights into the behavior of our model.
 
 ## Findings and insights gained
-White wine:
+###White wine:
 Decision tree model determined that alcohol, volatile acidity, free sulfur dioxide, and chlorides as the most important features for predicting white wine quality. 
 Light GBM model indicated that volatile acidity, free sulfur dioxide, and chlorides got high feature importance scores.
 
-Red wine:
+###Red wine:
 Alcohol, sulphates, volatile acidity, and total sulfur dioxide were important features according to the decision tree model. 
 Light GBM model identified a different set of top features, namely, total sulfur dioxide, density, residual sugar, and volatile acidity. 
 Only two factors – total sulfur dioxide and volatile acidity overlapped between the two models. Alcohol and sulphates are not even in the top8 most important features in Light GBM model. 

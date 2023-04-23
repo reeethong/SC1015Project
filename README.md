@@ -15,7 +15,10 @@ This mini-project for SC1015 (Introduction to Data Science and Artificial Intell
 - Yuhan -  Decision Tree Model, Light GBM Model, Conclusions
 
 ## Problem Definition
-As university students, we are new to the wine scene and would like to enjoy wine as much as our parents. Even within red and white wine, there are so many different wine products available on the market. Hence, we would like to find out which factors are important in predicting wine quality so that we can make more informed decisions when purchasing wine and choose wines that are more likely to match our preferences. 
+As avid wine lovers, we like to sample wines that we have not tried before so that we can discover new wines that match our taste but in doing so, we have sampled so many disappointing wines. Hence, we would like to identify the factors that contribute to wine quality so that winemakers can produce wines that are more likely to satisfy consumer preferences. Thus as consumers, we will be more likely to discover wines that we enjoy and are willing to purchase again in the future.
+
+
+In this project, we will identify which factors are most significant in deciding the quality of red and white wine.
 
 ## Models used
 ### Isolation Forest
@@ -62,9 +65,10 @@ This inconsistency may be due to the decision tree model being adept at capturin
 - Decision tree with grid search
 - Light GBM model with stratified K-Fold cross-validation
 
+## Presentation slides
+https://www.canva.com/design/DAFfUENcVMs/OiC64Qu3Sc1h5QHomGXG9w/edit?utm_content=DAFfUENcVMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## References
 - https://www.analyticsvidhya.com/blog/2021/08/complete-guide-on-how-to-use-lightgbm-in-python/
 - https://towardsdatascience.com/grid-search-for-model-tuning-3319b259367e
 - https://www.analyticsvidhya.com/blog/2021/07/anomaly-detection-using-isolation-forest-a-complete-guide/
-- https://www.canva.com/design/DAFfUENcVMs/OiC64Qu3Sc1h5QHomGXG9w/edit?utm_content=DAFfUENcVMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-（This is our presentation slides)
